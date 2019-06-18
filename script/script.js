@@ -3,7 +3,7 @@ $(document).ready(function () {
 		scrollingSpeed: 800,
 		navigation: true,
 		navigationPosition: 'left',
-		anchors:['firstPage', 'secondPage', 'thirdPage'],
+		anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
 		slidesNavigation: true,
 		/*scrollOverflow: true,*/
 		showActiveTooltip: true,
