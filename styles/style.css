@@ -35,6 +35,12 @@
 	background-size: cover;
 }
 
+#section4 {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../video/train.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
 .container {
 	width: 100%;
 	max-width: 1200px;
