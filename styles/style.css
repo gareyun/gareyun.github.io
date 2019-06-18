@@ -335,6 +335,8 @@ iframe {
 
 
 
+/* width */
+
 @media screen and (max-width: 1280px), (max-height: 960px) {
 	#section2 img {
 		width: 550px;
