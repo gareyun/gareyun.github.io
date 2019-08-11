@@ -1,3 +1,7 @@
+* {
+	transition: .1s;
+}
+
 .main {
 	margin-bottom: 50px;
 }
@@ -16,4 +20,14 @@ label:hover {
 #answer {
 	font-size: 20px;
 	margin-top: 75px;
+}
+
+button {
+	font-size: 24px;
+	border: 5px dashed #333;
+	padding: 15px;
+}
+
+button:hover {
+	transform: scale(1.05);
 }
