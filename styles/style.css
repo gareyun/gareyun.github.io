@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: Litera, sans-serif;
+	font-family: sans-serif;
 }
 
 #section1 {
@@ -67,6 +67,7 @@
 	letter-spacing: 5px;
 	margin-right: 95px;
 	font-size: 36px;
+	font-family: Litera;
 }
 
 .top-nav nav a {
