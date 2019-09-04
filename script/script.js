@@ -14,3 +14,21 @@ $(document).ready(function () {
 
 	});
 });
+
+var
+	btn = document.getElementById('takeInfo'),
+	close = document.getElementById('close-info'),
+	modal = document.getElementById('myModal');
+
+btn.onclick = function () {
+	modal.style.display = 'block';
+}
+
+close.onclick = function () {
+	modal.style.display = 'none';
+}
+
+window.onclick = function (event) {
+	if ( event.target == modal )
+		modal.style.display = 'none';
+}
