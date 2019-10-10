@@ -61,6 +61,21 @@
 	margin: 0 auto;
 }
 
+.btn-up a img {
+	
+	position: absolute;
+	bottom: 5%;
+	right: 3%;
+	font-size: 36px;
+	z-index: 5;
+	opacity: 0.8;
+	transition: .2s;
+}
+
+.btn-up a img:hover {
+	opacity: 1;
+}
+
 .top-nav {
 	display: flex;
 	justify-content: center;
@@ -91,7 +106,7 @@
 	padding: 5px;
 }
 
-.top-nav nav a:nth-child(4) {
+.top-nav nav a:nth-child(5) {
 	margin-right: 0px;
 }
 
