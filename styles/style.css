@@ -62,7 +62,6 @@
 }
 
 .btn-up a img {
-	
 	position: absolute;
 	bottom: 5%;
 	right: 3%;
@@ -490,21 +489,7 @@ iframe {
   background: url("../img/joker/img-4.jpg") no-repeat center;
   background-size: cover; }
 
-@media (max-width: 640px) {
-  .slider {
-    height: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column; }
-
-  .item {
-    width: 100%;
-    height: 25vh; }
-    .item:hover {
-      -webkit-box-flex: 30%;
-          -ms-flex-positive: 30%;
-              flex-grow: 30%; } }
+  
 
 
 
@@ -644,6 +629,25 @@ iframe {
 	.two {
 		flex-direction: column;
 	}
+
+	.slider {
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    }
+
+  	.item {
+    	width: 100%;
+   		height: 25vh; 
+	}
+
+    .item:hover {
+      -webkit-box-flex: 30%;
+          -ms-flex-positive: 30%;
+              flex-grow: 30%; 
+    }
 
 }
 
