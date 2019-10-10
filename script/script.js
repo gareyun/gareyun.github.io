@@ -7,7 +7,7 @@ $(document).ready(function () {
 		slidesNavigation: true,
 		/*scrollOverflow: true,*/
 		showActiveTooltip: true,
-		navigationTooltips: ['главная', 'WEB', 'Vegas', '3D'],
+		navigationTooltips: ['ГЛАВНАЯ', 'WEB', 'VEGAS', '3D', 'SLIDER'],
 		loopTop: true,
 		loopBottom: true,
 
