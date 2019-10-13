@@ -14,6 +14,7 @@ $(document).ready(function () {
 
 	});
 
+
 	var
 		btn = document.getElementById('takeInfo'),
 		close = document.getElementById('close-info'),
