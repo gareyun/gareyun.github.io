@@ -3,11 +3,11 @@ $(document).ready(function () {
 		scrollingSpeed: 800,
 		navigation: true,
 		navigationPosition: 'left',
-		anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage'],
+		anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage'],
 		slidesNavigation: true,
 		/*scrollOverflow: true,*/
 		showActiveTooltip: true,
-		navigationTooltips: ['ГЛАВНАЯ', 'WEB', 'VEGAS', '3D', 'SLIDER'],
+		navigationTooltips: ['ГЛАВНАЯ', 'WEB', 'VEGAS', '3D', 'SLIDER', 'TABS'],
 		loopTop: true,
 		loopBottom: true,
 	});
@@ -28,6 +28,13 @@ $(document).ready(function () {
 		$('.modal-content').css({
 			'margin': '-15% auto'
 		});
+	});
+
+	$('.tab').on('click', function() {
+		$('.content').removeClass('content_active');
+		$('.tab').removeClass('tab_active');
+		$(this).addClass('tab_active');
+		$('.content[data-tab='+$(this).attr('data-tab')+']').toggleClass('content_active');
 	});
 
 	/*var
