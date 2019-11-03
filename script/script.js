@@ -12,8 +12,25 @@ $(document).ready(function () {
 		loopBottom: true,
 	});
 
+	$('#takeInfo').on('click', function() {
+		event.preventDefault();
+		$('#myModal').fadeIn(500);
 
-	var
+		$('.modal-content').css({
+			'margin': '15% auto'
+		});
+	});
+
+	$('#close-info').on('click', function() {
+		event.preventDefault();
+		$('#myModal').fadeOut(500);
+
+		$('.modal-content').css({
+			'margin': '-15% auto'
+		});
+	});
+
+	/*var
 		btn = document.getElementById('takeInfo'),
 		close = document.getElementById('close-info'),
 		modal = document.getElementById('myModal');
@@ -29,7 +46,7 @@ $(document).ready(function () {
 	window.onclick = function (event) {
 		if ( event.target == modal )
 			modal.style.display = 'none';
-	}
+	}*/
 	
 	$(this).keydown(function(event) {
 		var secret = $(this).find('.secret[data-secret='+event.which+']');
