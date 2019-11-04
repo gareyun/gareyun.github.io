@@ -12,6 +12,24 @@ $(document).ready(function () {
 		loopBottom: true,
 	});
 
+	let
+		menuLink = $('.menu-link'),
+		menu = $('menu'),
+		closeLink = $('.menu-close'),
+		navLink = $('menu ul li a');
+
+	menuLink.click(function() {
+		menu.toggleClass('menu_active');
+	});
+
+	closeLink.click(function() {
+		menu.toggleClass('menu_active');
+	});
+
+	navLink.on('click', function() {
+		menu.toggleClass('menu_active');
+	});
+
 	$('#takeInfo').on('click', function() {
 		event.preventDefault();
 		$('#myModal').fadeIn(500);

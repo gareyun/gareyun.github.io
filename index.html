@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Gareyun - Портфолио</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="styles/jquery.fullpage.css">
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="shortcut icon" href="img/logo.png" type="image/png">
@@ -38,13 +39,26 @@
 		<img class="secret" src="img/logo.png" alt="Логотип" data-secret="71">
 	</div>
 
+	<menu>
+		<span class="menu-close">&times;</span>
+		<ul>
+			<li><a href="#secondPage" data-menuanchor="secondPage">WEB</a></li>
+			<li><a href="#thirdPage" data-menuanchor="thirdPage">Sony Vegas</a></li>
+			<li><a href="#fourthPage" data-menuanchor="fourthPage">3D</a></li>
+			<li><a href="#fifthPage" data-menuanchor="fifthPage">Slider</a></li>
+			<li><a href="#sixthPage" data-menuanchor="sixthPage">Tabs</a></li>
+		</ul>
+	</menu>
+
 	<div id="fullpage">
 		<header class="section" id="section1" name="inception">
 			<div class="container fp-bg">
 				<div class="top-nav">
 					<h2 class="top-nav__title">Gareyun</h2>
+					<div class="menu-link">
+						Navigation
+					</div>
 					<nav id="menu">
-						
 						<a href="#secondPage" data-menuanchor="secondPage">WEB</a>
 						<a href="#thirdPage" data-menuanchor="thirdPage">Sony Vegas</a>
 						<a href="#fourthPage" data-menuanchor="fourthPage">3D</a>
@@ -288,6 +302,10 @@
 		</section>
 
 		<section class="section" id="section6">
+			<div class="num">
+				<div class="line"></div>
+				06
+			</div>
 			<div class="tab-container">
 				<div class="tabs">
 					<ul class="tabs-main">
