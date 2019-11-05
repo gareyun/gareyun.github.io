@@ -48,6 +48,19 @@ $(document).ready(function () {
 		});
 	});
 
+	// youtube
+	$(window).resize(function(event) {
+		var width = $(this).width();
+		if ( width < 940 ) {
+			$('.text-videos_responsive').append($('.text-videos'));
+
+		} else if ( width > 940 ) {
+			$('.two iframe:first').after($('.text-videos'));
+		} else if ( width > 700 ) {
+			$('.two iframe:first').insertAfter($('.text-videos'));
+		}
+	});
+
 	$('.tab').on('click', function() {
 		$('.content').removeClass('content_active');
 		$('.tab').removeClass('tab_active');
