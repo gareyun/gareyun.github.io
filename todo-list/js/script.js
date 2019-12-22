@@ -48,10 +48,15 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 
 	});
+	
 
 	popupErrorClose.addEventListener('click', function() {
 		popupError.style.display = 'none';
 	});
 
+	window.addEventListener('click', function(event) {
+		if ( event.target == popupError )
+			popupError.style.display = 'none';
+	});
 
 });
