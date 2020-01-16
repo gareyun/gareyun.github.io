@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clicker</title>
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+	<h3 class="coins title inline">
+		Количество коинов: <span class="coins__value">0</span>
+		<small><sub><span class="coins__plus"></span></sub></small>
+	</h3>
+	<br>
+	<h3 class="experience title inline">
+		Опыт: <span class="experience__value">0</span>
+	</h3>
+	<br>
+	<h3 class="lvl inline">
+		Уровень: <span class="lvl__value">1</span>
+		<small><sub>(<span class="experience__remain"></span> до повышения)</sub></small>
+	</h3>
+	<br>
+	<div class="inventory inline">
+		<div class="inventory__child" data-damage="10">Лук</div>
+	</div>
+	<br>
+	<div class="damage inline">
+		Текущий урон: <span class="damage__value"></span>
+	</div>
+	
+	
+	<div class="enemy-block">
+		<div class="hit-points">
+			<span class="coins-kill"></span>
+			<span class="damage-click"></span>
+			<div class="hit-points-value"></div>
+		</div>
+		
+		<div class="enemy">
+			<p class="enemy__name"></p>
+			<!-- <div class="enemy__head"></div>
+			<div class="enemy__body"></div> -->
+			<img class="enemy-skin" src="img/skin-1.png" alt="Enemy">
+			<img class="enemy-skin" src="img/skin-2.png" alt="Enemy">
+			<img class="enemy-skin" src="img/skin-3.png" alt="Enemy">
+			<img class="enemy-skin" src="img/skin-4.png" alt="Enemy">
+			<img class="enemy-skin" src="img/skin-5.png" alt="Enemy">
+			<div class="cap"></div>
+		</div>
+	</div>
+
+	
+	<div class="shop__link">Shop</div>
+	<div class="shop shop_active">
+		<div class="shop__close">&times;</div>
+		<div class="shop-menu">
+
+			<div class="shop-menu-tabs-row">
+				<button class="shop-menu-tab__btn shop-menu-tab__btn_active" data-tab='weapon'>Оружие</button>
+				<button class="shop-menu-tab__btn" data-tab='other'>Улучшения</button>
+			</div>
+
+			<div class="shop-menu-tab shop-menu-tab_active" data-tab='weapon'>
+				<div class="shop-menu-product">
+					<button class="upgrade" data-tab='weapon' data-cost='1800' data-upgrade='weapon' data-damage='15' data-weapon='Арбалет'>Арбалет (урон - 20)</button>
+					<div>
+						- <span class="cost"></span> коинов
+					</div>
+				</div>
+				<div class="shop-menu-product unavailable-product" data-status='closed'>
+					<button class="upgrade" data-tab='weapon' data-cost='3600' data-upgrade='weapon' data-needful-lvl='2' data-damage='30' data-weapon='Меч'>Меч (урон - 30)</button>
+					<div>
+						- <span class="cost"></span> коинов
+						(<span class="needful-lvl">2</span> lvl)
+					</div>
+				</div>
+				<div class="shop-menu-product unavailable-product" data-status='closed'>
+					<button class="upgrade" data-tab='weapon' data-cost='4700' data-upgrade='weapon' data-needful-lvl='3' data-damage='50' data-weapon='Секира'>Секира (урон - 50)</button>
+					<div>
+						- <span class="cost"></span> коинов
+						(<span class="needful-lvl">3</span> lvl)
+					</div>
+				</div>
+			</div>
+
+			<div class="shop-menu-tab" data-tab='other'>
+				<div class="shop-menu-product">
+					<button class="upgrade" data-tab='other' data-cost='2500' data-upgrade='x2'>x2 к коинам от ударов</button>
+					<div>
+						- <span class="cost"></span> коинов
+					</div>
+				</div>
+				<div class="shop-menu-product">
+					<button class="upgrade" data-tab='other' data-cost='3500' data-upgrade='coinTimer'>Прибавка коинов раз в <span class="coin-timer-value">4000</span> миллисек. (по умолчанию - 5 сек.)</button>
+					<div>
+						- <span class="cost"></span> коинов
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="script/script.js"></script>
+</body>
+</html>
