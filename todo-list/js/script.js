@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		if ( event.target.className == 'case-delete' ) {
 			event.target.parentNode.parentNode.removeChild(event.target.parentNode);
-		} else if ( event.target.className == 'case'&& event.target.className != 'case-delete' ) {
+		} else if ( event.target.className == 'case' && event.target.className != 'case-delete' ) {
 			event.target.style.background = '#8abd8a';
-			document.querySelector('.case-out').style.textDecoration = 'line-through';
+			event.target.style.textDecoration = 'line-through';
 		}
 
 	});
