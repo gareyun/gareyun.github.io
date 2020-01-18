@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		itteration 				= 1,
 		count 					= 1,
 		generalCount			= 0,
+		isWrong					= false,
 		firstClickedItem,
 		secondClickedItem,
 		firstClickedItemAttr,
@@ -51,52 +52,55 @@ document.addEventListener('DOMContentLoaded', function() {
 	generateImages();
 
 	wrapperTable.addEventListener('click', function(event) {
+		if ( !isWrong ) {
+			if ( event.target.classList.contains('item') ) {
+				event.target.classList.remove('item-bg');
 
-		if ( event.target.classList.contains('item') ) {
-			event.target.classList.remove('item-bg');
+				if ( count == 1 ) {
+					firstClickedItem = event.target.querySelector('.item-img');
+					firstClickedItemAttr = firstClickedItem.getAttribute('src');
+					count++;
+				} else if ( count == 2 ) {
+					secondClickedItem = event.target.querySelector('.item-img');
+					secondClickedItemAttr = secondClickedItem.getAttribute('src');
 
-			if ( count == 1 ) {
-				firstClickedItem = event.target.querySelector('.item-img');
-				firstClickedItemAttr = firstClickedItem.getAttribute('src');
-				count++;
-			} else if ( count == 2 ) {
-				secondClickedItem = event.target.querySelector('.item-img');
-				secondClickedItemAttr = secondClickedItem.getAttribute('src');
+					if ( firstClickedItemAttr == secondClickedItemAttr ) {
 
-				if ( firstClickedItemAttr == secondClickedItemAttr ) {
+						firstClickedItem.parentNode.style.boxShadow = '0 0 10px 10px #B6E76A';
+						secondClickedItem.parentNode.style.boxShadow = '0 0 10px 10px #B6E76A';
 
-					firstClickedItem.parentNode.style.boxShadow = '0 0 10px 10px #B6E76A';
-					secondClickedItem.parentNode.style.boxShadow = '0 0 10px 10px #B6E76A';
+						firstClickedItemAttr = '';
+						secondClickedItemAttr = '';
+						count = 1;
 
-					firstClickedItemAttr = '';
-					secondClickedItemAttr = '';
-					count = 1;
+						generalCount++;
+						console.log('Right!');
+					} else {
+						isWrong = true;
 
-					generalCount++;
-					console.log('Right!');
-				} else {
+						firstClickedItem.parentNode.style.boxShadow = '0 0 10px 10px #E77F76';
+						secondClickedItem.parentNode.style.boxShadow = '0 0 10px 10px #E77F76';
 
-					firstClickedItem.parentNode.style.boxShadow = '0 0 10px 10px #E77F76';
-					secondClickedItem.parentNode.style.boxShadow = '0 0 10px 10px #E77F76';
+						firstClickedItemAttr = '';
+						secondClickedItemAttr = '';
+						count = 1;
 
-					firstClickedItemAttr = '';
-					secondClickedItemAttr = '';
-					count = 1;
+						setTimeout(function(event) {
+							isWrong = false;
 
-					setTimeout(function(event) {
-						firstClickedItem.parentNode.style.boxShadow = 'initial';
-						secondClickedItem.parentNode.style.boxShadow = 'initial';
+							firstClickedItem.parentNode.style.boxShadow = 'initial';
+							secondClickedItem.parentNode.style.boxShadow = 'initial';
 
-						firstClickedItem.parentNode.classList.add('item-bg');
-						secondClickedItem.parentNode.classList.add('item-bg');
-					}, 500);
+							firstClickedItem.parentNode.classList.add('item-bg');
+							secondClickedItem.parentNode.classList.add('item-bg');
+						}, 500);
 
-					console.log('Wrong!');
+						console.log('Wrong!');
+					}
 				}
+				console.log('general - ' + generalCount);
 			}
-			console.log('general - ' + generalCount);
 		}
-
 
 		// win
 		if ( generalCount == items.length / 2 ) {
