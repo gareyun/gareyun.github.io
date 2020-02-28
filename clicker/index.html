@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>Clicker</title>
 	<link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 
 	<h3 class="coins title inline">
-		Количество коинов: <span class="coins__value">0</span>
+		Количество коинов: <span class="coins__value">10000</span>
 		<small><sub><span class="coins__plus"></span></sub></small>
 	</h3>
 	<br>
@@ -82,11 +83,18 @@
 						(<span class="needful-lvl">3</span> lvl)
 					</div>
 				</div>
+				<div class="shop-menu-product unavailable-product" data-status='closed'>
+					<button class="upgrade" data-tab='weapon' data-cost='8000' data-upgrade='weapon' data-needful-lvl='4' data-damage='75' data-weapon='Платиновая Секира'>Платиновая Секира (урон - 75)</button>
+					<div>
+						- <span class="cost"></span> коинов
+						(<span class="needful-lvl">4</span> lvl)
+					</div>
+				</div>
 			</div>
 
 			<div class="shop-menu-tab" data-tab='other'>
 				<div class="shop-menu-product">
-					<button class="upgrade" data-tab='other' data-cost='2500' data-upgrade='x2'>x2 к коинам от ударов</button>
+					<button class="upgrade" data-tab='other' data-cost='5000' data-upgrade='x2'>x2 к коинам от ударов</button>
 					<div>
 						- <span class="cost"></span> коинов
 					</div>
