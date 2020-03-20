@@ -1,0 +1,105 @@
+.contact
+	color: $grey-text
+
+	&__item
+		position: relative
+		margin-bottom: 1.85em
+
+		img
+			position: absolute
+			top: 0
+			left: -1.5em
+
+		h5
+			display: inline-block
+			position: relative
+			margin-bottom: 0.8em
+			font-size: 0.875em
+			font-weight: 700
+			text-transform: uppercase
+
+		p
+			font-family: $rob
+			font-size: 0.8em
+			font-weight: 400
+			line-height: 1.5em
+
+	&__address::before
+		content: url('../img/communication/mark-map.png')
+		/*background: url('../img/communication/mark-map.png') center*/
+		position: absolute
+		left: -1.5em
+
+	&__phone::before
+		content: url('../img/communication/phone.png')
+		/*background: url('../img/communication/mark-map.png') center*/
+		position: absolute
+		left: -1.5em
+
+	&__mail::before
+		content: url('../img/communication/email.png')
+		/*background: url('../img/communication/mark-map.png') center*/
+		position: absolute
+		left: -1.5em
+
+
+.form-send
+	color: $grey-text
+	font-family: $rob
+	font-size: 0.75em
+	font-weight: 400
+
+	&__info
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+
+	&__input
+		margin-bottom: 1.25em
+		width: 48%
+		padding: 0.9em
+		height: 3.5em
+		border: 1px solid $grey-text
+
+		&::placeholder
+			text-transform: uppercase
+
+		&:focus
+			border: 1px solid $active-color
+
+	&__message
+		margin-bottom: 1.25em
+		width: 100%
+		height: 7.5em
+		resize: none
+		padding: 0.9em
+		border: 1px solid $grey-text
+
+		&::placeholder
+			text-transform: uppercase
+
+		&:focus
+			border: 1px solid $active-color
+
+	&__button
+		margin-right: 2.5em
+		width: 11em
+		padding: 0.9em
+		border: 1px solid $grey-text
+		background-color: transparent
+		text-transform: uppercase
+		color: $grey-text
+
+		&:hover
+			border: 1px solid $active-color
+			color: $active-color
+			cursor: pointer
+
+	small
+		font-family: $rob
+		font-size: 0.9em
+		font-weight: 400
+		color: $grey-text
+
+		span
+			color: $active-color

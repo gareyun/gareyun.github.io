@@ -1,0 +1,60 @@
+@import 'reset'
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic')
+
+@import 'variables'
+@import 'header'
+@import 'about'
+@import 'discount'
+@import 'orders'
+@import 'effect'
+@import 'feedback'
+@import 'production'
+@import 'catalog'
+@import 'contacts'
+@import 'media'
+
+
+body
+	font-family: 'PT Sans', sans-serif
+	font-size: 18px
+
+.button
+	// width: 10em
+	// height: 2.2em
+	padding: 0.8em 1.7em
+	border: none
+	color: $white
+	font-weight: 700
+	text-transform: uppercase
+	border-radius: 7px
+	cursor: pointer
+	box-shadow: 0 5px 15px 5px rgba(0, 0, 0, .1)
+	
+.bold
+	font-weight: 700
+
+.title_bg
+	background: linear-gradient( $green-light, darken($green-light, 10%) )
+	padding: 0.1em 0.7em
+
+.ever__title
+	font-size: 2em
+	font-weight: 700
+	text-transform: uppercase
+
+	&_white
+		color: $white
+
+	&_black
+		color: $full-black
+
+.form__input
+	padding: 0.7em 1em
+	border-radius: 5px
+	border: 1px solid $white-dark
+	background-color: $white-bg
+
+	&::placeholder
+		font-size: 0.9em
+		font-style: italic
+		color: $grey
