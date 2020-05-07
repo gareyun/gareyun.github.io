@@ -2,353 +2,303 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Gareyun - Портфолио</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="styles/jquery.fullpage.css">
-	<link rel="stylesheet" href="styles/style.css">
-	<link rel="shortcut icon" href="img/logo.png" type="image/png">
-	<link rel="stylesheet" href="styles/animate.css">
-	<link rel="stylesheet" href="styles/jquery.fancybox.min.css">
-	<link rel="stylesheet" href="styles/normalize.css">
-	<link rel="stylesheet" href="styles/fonts.css">
-	<script src="script/wow.min.js"></script>
-   	<script>
-   		new WOW().init();
-   		var a = document.getElementById('fp-nav');
-   		a.style.display = "none";
-   	</script>
-   	</head>
+	<title>Верстка сайтов — воплощение макетов в реальность.</title>
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-
-	<div id="page-preloader" class="preloader">
-		<div class="loader"></div>
+	
+	<div class="tech-work">
+		<p class="tech-work__message">Сайт находится в разработке</p>
 	</div>
-
-	<div class="btn-up">
-		<a href="#firstPage">
-			<img src="img/up-min.png" alt="Вверх">
-		</a>
-	</div>
-
-	<div class="modal" id="myModal">
-		<div class="modal-content">
-			<span id="close-info">&times;</span>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolorum quaerat, quidem accusamus nobis deserunt fugiat cum dolore maxime unde alias, totam dolor quia, veniam debitis vel libero sapiente? Eaque ad natus harum reiciendis. Cupiditate dolor, repellat dignissimos quisquam quas non, est nesciunt ab ipsum, saepe hic amet odio sapiente.
-			</p>
-		</div>
-	</div>
-
-	<div>
-		<img class="secret" src="img/logo.png" alt="Логотип" data-secret="71">
-	</div>
-
-	<menu>
-		<span class="menu-close">&times;</span>
-		<ul>
-			<li><a href="#secondPage" data-menuanchor="secondPage">WEB</a></li>
-			<li><a href="#thirdPage" data-menuanchor="thirdPage">Sony Vegas</a></li>
-			<li><a href="#fourthPage" data-menuanchor="fourthPage">3D</a></li>
-			<li><a href="#fifthPage" data-menuanchor="fifthPage">Slider</a></li>
-			<li><a href="#sixthPage" data-menuanchor="sixthPage">Tabs</a></li>
-		</ul>
-	</menu>
-
-	<div id="fullpage">
-		<header class="section" id="section1" name="inception">
-			<div class="container fp-bg">
-				<div class="top-nav">
-					<h2 class="top-nav__title">Gareyun</h2>
-					<div class="menu-link">
-						Navigation
-					</div>
-					<nav id="menu">
-						<a href="#secondPage" data-menuanchor="secondPage">WEB</a>
-						<a href="#thirdPage" data-menuanchor="thirdPage">Sony Vegas</a>
-						<a href="#fourthPage" data-menuanchor="fourthPage">3D</a>
-						<a href="#fifthPage" data-menuanchor="fifthPage">Slider</a>
-						<a href="#sixthPage" data-menuanchor="sixthPage">Tabs</a>
-					</nav>
-				</div>
-				<div class="header-info">
-					<div class="num">
-						<div class="line"></div>
-						01
-					</div>
-					<div class="main-header">
-						<h1>Портфолио</h1>
-						<button id="takeInfo" class="more-info">Подробнее</button>
-						
-
-						<div class="scroll">
-							<img src="img/mouse.png" alt="">
-							<div class="main-scroll-line">
-								<div class="scroll-line wow  fadeOutDown" data-wow-iteration="9999999" data-wow-duration="1.5s">
-									<div class="line1"></div>
-									<div class="line2"></div>
-								</div>
-								<span>scroll</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-
-
-		<main class="section" id="section2">
-			<div class="slide">
+	<!-- /.tech-work -->
+	
+	<header class="header header_dark">
+		<div class="container">
+			<div class="header-top">
 				<div class="container">
-
-					<div class="main-first">
-						<div class="first-text">
-							<div class="lines">
-								<div class="line-min"></div>
-								<div class="line-left"></div>		
-							</div>
-							<div class="text-lian">
-								<h2>Lian</h2>
-								<p>
-									Самый первый макет, написанный самостоятельно. <br>
-									Адаптивности, конечно же, и близко нет. <br> Поэтому он с фиксированной шириной.
-								</p>
-								<a data-fancybox href="https://youtu.be/SvLYHYSDRHU">
-									<span>Посмотреть</span> подробнее
-								</a>
-							</div>
-						</div>
-						<div class="lian-img">
-							<img src="img/lian.jpg">
-						</div>
+					<div class="header-logo">
+						<img class="logo" src="img/header/logo-icon.png" alt="Логотип">
+						<span class="header__name">Gareyun</span>
 					</div>
-
-					<div class="main-second">
-						<div class="lian-img2">
-							<img src="img/merkury.jpg">
-						</div>
-						<div class="second-text">
-							<div class="text-lian">
-								<h2>Merkury</h2>
-								<p>
-									А этот был написан спустя пол года, <br>после проекта "Lian". <br>Но всё также без адаптивности.
-								</p>
-								<a data-fancybox href="https://youtu.be/NICxHCCzCcU">
-									Посмотреть <span>подробнее</span>
-								</a>
-							</div>
-						</div>
-						<div class="lines">
-							<div class="line-left"></div>
-							<div class="line-min"></div>		
-						</div>
-					</div>
-				</div>
-				<div class="num">
-					<div class="line"></div>
-					02
-				</div>
-			</div>
-
-			<div class="slide">
-				<div class="container">
-					<div class="main-first">
-						<div class="first-text">
-							<div class="lines">
-								<div class="line-min"></div>
-								<div class="line-left"></div>		
-							</div>
-							<div class="text-lian">
-								<h2>Golden</h2>
-								<p>
-									Самый первый макет, выполненный по видеоуроку <br>Тогда я ещё CSS не знал. <br> Конспектирование чужого кода было интересным.
-								</p>
-								<a data-fancybox href="https://youtu.be/K59TgLKsENc">
-									<span>Посмотреть</span> подробнее
-								</a>
-							</div>
-						</div>
-						<div class="lian-img">
-							<img src="img/golden.jpg">
-						</div>
-					</div>
-
-					<div class="main-second">
-						<div class="lian-img2">
-							<img src="img/lending.jpg">
-						</div>
-						<div class="second-text">
-							<div class="text-lian">
-								<h2>Lending</h2>
-								<p>
-									Этот макет по аналогии с "Golden", <br>также создавался по видеоуроку. <br>Только начинал внедряться в CSS.
-								</p>
-								<a data-fancybox href="https://youtu.be/w-y_p9pFva8">
-									Посмотреть <span>подробнее</span>
-								</a>
-							</div>
-						</div>
-						<div class="lines">
-							<div class="line-left"></div>
-							<div class="line-min"></div>		
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="slide">	
-				<div class="container">
-					<div class="main-first">
-						<div class="first-text">
-							<div class="lines">
-								<div class="line-min"></div>
-								<div class="line-left"></div>		
-							</div>
-							<div class="text-lian">
-								<h2>Math</h2>
-								<p>
-									А это мой первый сайт в общем доступе, <br>который расположен на хостинге GitHub. <br>Там всякая мелочь: змейка, калькулятор, гелерея...
-								</p>
-								<a data-fancybox href="https://youtu.be/Ue7RE6rxyYU">
-									<span>Посмотреть</span> подробнее
-								</a>
-							</div>
-						</div>
-						<div class="lian-img">
-							<img src="img/math.jpg">
-						</div>
-					</div>
-
-					<div class="main-second">
-						<div class="lian-img2">
-							<img src="img/gallery.jpg">
-						</div>
-						<div class="second-text">
-							<div class="text-lian">
-								<h2>Gallery</h2>
-								<p>
-									Галерея с хорошим оформлением. <br>Классные анимации. <br>Подобрал красочные изображения для неё.
-								</p>
-								<a data-fancybox href="https://youtu.be/ir3JFG0g3zs">
-									Посмотреть <span>подробнее</span>
-								</a>
-							</div>
-						</div>
-						<div class="lines">
-							<div class="line-left"></div>
-							<div class="line-min"></div>		
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
-
-
-		<section class="section"  id="section3">
-
-				<div class="videos-resonsive">
-					<div class="text-videos_responsive">
-						
-					</div>
-								
-					<div class="two">
-						<iframe src="https://www.youtube.com/embed/7-__4CgDHWA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					
-						<div class="text-videos">
-							<h1>Sony Vegas</h1>
-							<p>
-								Последние нарезки по фильмам
-							</p>
-							<a href="https://www.youtube.com/channel/UCeSejUww9tGTLV3tjX_vWzw" id="linkYT">Перейти на YouTube канал</a>
-						</div>
-					
-						<iframe src="https://www.youtube.com/embed/iPmr5FwdgMo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-					
-					
-					
-					<div class="one">
-						<iframe src="https://www.youtube.com/embed/-kdiXa1NE6E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					
-						<iframe src="https://www.youtube.com/embed/1O3HuGpDwPs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-						</iframe>
-					</div>
-					<div class="num">
-						<div class="line"></div>
-						03
-					</div>
-				</div>
-		</section>
-
-
-
-
-		<section class="section" id="section4">
-			<div class="text-4d">
-				<h1>Cinema 4D</h1>
-				<p>
-					Окунулся и в создание 3D сцен
-				</p>
-			</div>
-
-			<video loop muted data-autoplay>
-				<!-- <source data-src="video/train.jpg" type="video/jpg"> -->
-				<source src="video/train-dark.mp4" type="video/mp4">
-				<source src="video/train-dark.ogv" type="video/ogv">
-				<source src="video/train-dark.webm" type="video/webm">
-			</video>
-		</section>
-
-		<section class="section" id="section5">
-			<div class="slider-joker">
-				<div class="item item-1"><span>Моя</span></div>
-				<div class="item item-2"><span>Жизнь</span></div>
-				<div class="item item-3"><span>Это</span></div>
-				<div class="item item-4"><span>Комедия</span></div>
-			</div>
-			<div class="num">
-				<div class="line"></div>
-				05
-			</div>
-		</section>
-
-		<section class="section" id="section6">
-			<div class="num">
-				<div class="line"></div>
-				06
-			</div>
-			<div class="tab-container">
-				<div class="tabs">
-					<ul class="tabs-main">
-						<li class="tab tab_active" id="tab-bg-1" data-tab="1">See</li>
-						<li class="tab" id="tab-bg-2" data-tab="2">All of</li>
-						<li class="tab" id="tab-bg-3" data-tab="3">This</li>
+					<!-- /.header-logo -->
+					<ul class="header-nav">
+						<li class="header-nav__item"><a class="header-nav__link" href="#">Главная</a></li>
+						<li class="header-nav__item"><a class="header-nav__link" href="#">Обо мне</a></li>
+						<li class="header-nav__item"><a class="header-nav__link" href="#">Портфолио</a></li>
+						<li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a></li>
 					</ul>
+					<!-- /.header-nav -->
 				</div>
-				
-				<div class="tabs-content">
-					<div class="content content_active" data-tab='1'>
-						<img src="img/tabs/1.jpg" alt="img-1">
-						<span class="content-text">This</span>
-					</div>
-					<div class="content" data-tab='2'>
-						<img src="img/tabs/2.jpg" alt="img-2">
-						<span class="content-text">Is</span>
-					</div>
-					<div class="content" data-tab='3'>
-						<img src="img/tabs/3.jpg" alt="img-3">
-						<span class="content-text">Elizabeth Olsen</span>
-					</div>
-				</div>
+			<!-- /.header-top -->
 			</div>
-		</section>
+			<!-- /.header-top-wrapper -->
+			<div class="header-main">
+				<h1 class="header__title"><span id="typed">Правильная</span><br> верстка сайтов</h1>
+				<p class="header-me"><span class="header-me_color">Воссоздающий макеты в реальность</span> — Динар Долматов</p>
+				<button class="button">Заказать верстку сайта</button>
+			</div>
+			<!-- /.header-main -->
+			<button class="arrow-down">&gt;</button>
+		</div>
+		<!-- /.container -->
+	</header>
+	<!-- /.header -->
+	
+	<!-- <section class="about">
+		<div class="container">
+			<h2 class="ever__title">Пару слов обо мне</h2>
+	
+		</div>
+		/.container
+	</section>
+	/.about -->
 
-	<script src="script/preloader.js"></script>
-	<script src="script/jquery-3.2.1.min.js"></script>
-	<!-- <script src="script/scrolloverflow.min.js"></script> -->
-	<script src="script/jquery.fullpage.js"></script>
-	<script src="script/script.js"></script>
-	<script src="script/jquery.vide.min.js"></script>
-	<script src="script/jquery.fancybox.min.js"></script>
+	<section class="about-this">
+		<div class="container">
+			<h2 class="ever__title">Чем я пользуюсь и что это такое</h2>
+			<div class="about-this-tools">
+				<div class="row align-items-start">
+					<div class="col-4">
+						<div class="about-this-tool">
+							<picture>
+								<source type="image/svg+xml" srcset="img/tools/web.svg">
+								<img src="img/tools/web.svg" alt="Screen">
+							</picture>
+							<h4 class="about-this-tool__title">HTML5 и CSS3</h4>
+							<p class="about-this-tool__subtitle">
+								HTML — структура сайта, а CSS — его украшение
+							</p>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="about-this-tool">
+							<picture>
+								<source type="image/svg+xml" srcset="img/tools/js.svg">
+								<img src="img/tools/js.svg" alt="Screen">
+							</picture>
+							<h4 class="about-this-tool__title">JavaScript</h4>
+							<p class="about-this-tool__subtitle">
+								Функционал сайта: модальные окна, табы, выезжающие меню..
+							</p>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="about-this-tool">
+							<picture>
+								<source type="image/svg+xml" srcset="img/tools/adaptive.svg">
+								<img src="img/tools/adaptive.svg" alt="Screen">
+							</picture>
+							<h4 class="about-this-tool__title">Bootstrap 4</h4>
+							<p class="about-this-tool__subtitle">
+								Верстаю сайты адаптивно
+							</p>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="about-this-tool">
+							<picture>
+								<source type="image/svg+xml" srcset="img/tools/w3c-1.svg">
+								<img src="img/tools/w3c-1.svg" alt="Screen">
+							</picture>
+							<h4 class="about-this-tool__title">Валидность</h4>
+							<p class="about-this-tool__subtitle">
+								Верстаю в соответствии со стандартами W3C. Соблюдаю семантику кода
+							</p>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="about-this-tool">
+							<picture>
+								<source type="image/svg+xml" srcset="img/tools/bem.svg">
+								<img src="img/tools/bem.svg" alt="Screen">
+							</picture>
+							<h4 class="about-this-tool__title">БЭМ</h4>
+							<p class="about-this-tool__subtitle">
+								Методика позволяет повторно использовать код на странице, избегая "Copy Paste".
+							</p>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="about-this-tool">
+							<picture>
+								<source type="image/svg+xml" srcset="img/tools/sass.svg">
+								<img src="img/tools/sass.svg" alt="Screen">
+							</picture>
+							<h4 class="about-this-tool__title">Препроцессор SASS</h4>
+							<p class="about-this-tool__subtitle">
+								Переменные, вложенности, миксины, наследование и другие приятные вещи в CSS
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.about-this-tools -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.about-this -->
 
+	<section class="content">
+		<div class="container">
+
+			<nav class="content-tabs">
+				<ul class="content-tabs-list">
+					<li class="content-tabs-list__item"><a href="#web" class="content-tabs-list__link">WEB</a></li>
+					<li class="content-tabs-list__item"><a href="#games" class="content-tabs-list__link">Games</a></li>
+					<li class="content-tabs-list__item"><a href="#other" class="content-tabs-list__link">Other</a></li>
+				</ul>
+				<!-- /.content-tabs-list -->
+			</nav>
+			<!-- /.content-tabs -->
+
+			<div class="content-block content-block_active" id="web">
+				<div class="row">
+
+					<div class="col-4">
+						<div class="content-block-item">
+							<img src="img/content/web/animals.png" alt="Image" class="content-block-item__image">
+							<div class="content-block-item-text">
+								<h5 class="content-block-item__title">Animal Shelter</h5>
+								<a href="content/web/animals/index.html" class="content-block-item__link">Learn more</a>
+							</div>
+						</div>
+						<!-- /.content-block-item -->
+					</div>
+					<!-- /.col -->
+
+					<div class="col-4">
+						<div class="content-block-item">
+							<img src="img/content/web/firs.png" alt="Image" class="content-block-item__image">
+							<div class="content-block-item-text">
+								<h5 class="content-block-item__title">Firs</h5>
+								<a href="content/web/firs/index.html" class="content-block-item__link">Learn more</a>
+							</div>
+						</div>
+						<!-- /.content-block-item -->
+					</div>
+					<!-- /.col -->
+
+					<div class="col-4">
+						<div class="content-block-item">
+							<img src="img/content/web/startup.png" alt="Image" class="content-block-item__image">
+							<div class="content-block-item-text">
+								<h5 class="content-block-item__title">Startup</h5>
+								<a href="content/web/startup/index.html" class="content-block-item__link">Learn more</a>
+							</div>
+						</div>
+						<!-- /.content-block-item -->
+					</div>
+					<!-- /.col -->
+
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.content-block -->
+
+			<div class="content-block" id="games">
+
+				<div class="row">
+
+					<div class="col-4">
+						<div class="content-block-item">
+							<img src="img/content/games/clicker.png" alt="Image" class="content-block-item__image">
+							<div class="content-block-item-text">
+								<h5 class="content-block-item__title">Clicker</h5>
+								<a href="content/games/clicker/index.html" class="content-block-item__link">Learn more</a>
+							</div>
+						</div>
+						<!-- /.content-block-item -->
+					</div>
+					<!-- /.col -->
+					
+					<div class="col-4">
+						<div class="content-block-item">
+							<img src="img/content/games/card2card.png" alt="Image" class="content-block-item__image content-block-item__image_quadro">
+							<div class="content-block-item-text">
+								<h5 class="content-block-item__title">Card2Card</h5>
+								<a href="content/games/card2card/index.html" class="content-block-item__link">Learn more</a>
+							</div>
+						</div>
+						<!-- /.content-block-item -->
+					</div>
+					<!-- /.col -->
+					
+					<div class="col-4">
+						<div class="content-block-item">
+							<img src="img/content/games/fifteen.png" alt="Image" class="content-block-item__image content-block-item__image_quadro">
+							<div class="content-block-item-text">
+								<h5 class="content-block-item__title">Fifteen</h5>
+								<a href="content/games/fifteen/index.html" class="content-block-item__link">Learn more</a>
+							</div>
+						</div>
+						<!-- /.content-block-item -->
+					</div>
+					<!-- /.col -->
+					
+					<div class="col-4">
+						<div class="content-block-item">
+							<img src="img/content/games/words.png" alt="Image" class="content-block-item__image content-block-item__image_quadro">
+							<div class="content-block-item-text">
+								<h5 class="content-block-item__title">Words</h5>
+								<a href="content/games/words/index.html" class="content-block-item__link">Learn more</a>
+							</div>
+						</div>
+						<!-- /.content-block-item -->
+					</div>
+					<!-- /.col -->
+
+				</div>
+				<!-- /.row -->
+				
+			</div>
+			<!-- /.content-block -->
+
+			<div class="content-block" id="other">
+				<div class="row">
+
+					<div class="col-4">
+						<div class="content-block-item">
+							<img src="img/content/other/test.png" alt="Image" class="content-block-item__image content-block-item__image_quadro">
+							<div class="content-block-item-text">
+								<h5 class="content-block-item__title">Test</h5>
+								<a href="content/other/smart-test/index.html" class="content-block-item__link">Learn more</a>
+							</div>
+						</div>
+						<!-- /.content-block-item -->
+					</div>
+					<!-- /.col -->
+
+					<div class="col-4">
+						<div class="content-block-item">
+							<img src="img/content/other/todo-list.png" alt="Image" class="content-block-item__image content-block-item__image_rectabgle">
+							<div class="content-block-item-text">
+								<h5 class="content-block-item__title">ToDo List</h5>
+								<a href="content/other/todo-list/index.html" class="content-block-item__link">Learn more</a>
+							</div>
+						</div>
+						<!-- /.content-block-item -->
+					</div>
+					<!-- /.col -->
+
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.content-block -->
+
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.content -->
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

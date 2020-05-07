@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Litera';
-    src: url('../fonts/Litera-Regular.eot');
-    src: url('../fonts/Litera-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Litera-Regular.woff') format('woff'),
-        url('../fonts/Litera-Regular.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
