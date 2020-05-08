@@ -24,15 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	setLineHeightDefault();
 
 
-	let typed = new Typed('#typed', {
-		strings: ['', 'Профессиональная', 'Искусная'],
-		startDelay: 1500,
-		backDelay: 1000,
-		backSpeed: 60,
-		typeSpeed: 90
-	});
-
-
 	window.addEventListener('scroll', function() {
 		setLineHeightDefault();
 	});
