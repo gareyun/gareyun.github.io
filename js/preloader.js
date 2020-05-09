@@ -23,8 +23,8 @@ function imageLoaded() {
 				preloader.classList.add('preloader-done');
 
 				let typed = new Typed('#typed', {
-					strings: ['', 'Профессиональная', 'Искусная'],
-					startDelay: 1500,
+					strings: ['', 'Искусная', 'Профессиональная'],
+					startDelay: 2000,
 					backDelay: 1000,
 					backSpeed: 60,
 					typeSpeed: 90
