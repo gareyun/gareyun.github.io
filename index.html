@@ -38,17 +38,20 @@
 						<li class="header-nav__item"><a class="header-nav__link" href="#header">Главная</a></li>
 						<li class="header-nav__item"><a class="header-nav__link" href="#about">Обо мне</a></li>
 						<li class="header-nav__item"><a class="header-nav__link" href="#portfolio">Портфолио</a></li>
-						<li class="header-nav__item"><a class="header-nav__link" href="#contact">Контакты</a></li>
+						<!-- <li class="header-nav__item"><a class="header-nav__link" href="#contact">Контакты</a></li> -->
 					</ul>
 					<!-- /.header-nav -->
+					<div class="header-nav-menu">
+						<div class="header-nav-menu__lines"></div>
+					</div>
 				</div>
 			<!-- /.header-top -->
 			</div>
 			<!-- /.header-top-wrapper -->
 			<div class="header-main">
-				<h1 class="header__title"><span id="typed">Правильная</span><br> верстка сайтов</h1>
-				<p class="header-me"><span class="header-me_color">Воссоздающий макеты в реальность</span> — Динар Долматов</p>
-				<button class="button">Заказать верстку сайта</button>
+				<h1 class="header__title"><!-- <span id="typed">Правильная</span><br> --> верстка сайтов</h1>
+				<p class="header_me"><span class="header_me_color">Воссоздающий макеты в реальность</span> — Динар Долматов</p>
+				<a class="button" href="#portfolio">Перейти к портфолио</a>
 			</div>
 			<!-- /.header-main -->
 			<button class="arrow-down">&gt;</button>
@@ -71,7 +74,7 @@
 			<h2 class="ever__title">Чем я пользуюсь и что это такое</h2>
 			<div class="about-this-tools">
 				<div class="row align-items-start">
-					<div class="col-4">
+					<div class="col-sm-6 col-md-4">
 						<div class="about-this-tool">
 							<picture>
 								<source type="image/svg+xml" srcset="img/tools/web.svg">
@@ -83,7 +86,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-sm-6 col-md-4">
 						<div class="about-this-tool">
 							<picture>
 								<source type="image/svg+xml" srcset="img/tools/js.svg">
@@ -91,11 +94,11 @@
 							</picture>
 							<h4 class="about-this-tool__title">JavaScript</h4>
 							<p class="about-this-tool__subtitle">
-								Функционал сайта: модальные окна, табы, выезжающие меню..
+								Функционал сайта: модальные окна, табы, выезжающие меню и т.п.
 							</p>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-sm-6 col-md-4">
 						<div class="about-this-tool">
 							<picture>
 								<source type="image/svg+xml" srcset="img/tools/adaptive.svg">
@@ -103,11 +106,11 @@
 							</picture>
 							<h4 class="about-this-tool__title">Bootstrap 4</h4>
 							<p class="about-this-tool__subtitle">
-								Верстаю сайты адаптивно
+								Верстаю сайты адаптивно. Отображаются хорошо на всех размерах экранов
 							</p>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-sm-6 col-md-4">
 						<div class="about-this-tool">
 							<picture>
 								<source type="image/svg+xml" srcset="img/tools/w3c-1.svg">
@@ -119,7 +122,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-sm-6 col-md-4">
 						<div class="about-this-tool">
 							<picture>
 								<source type="image/svg+xml" srcset="img/tools/bem.svg">
@@ -127,19 +130,19 @@
 							</picture>
 							<h4 class="about-this-tool__title">БЭМ</h4>
 							<p class="about-this-tool__subtitle">
-								Методика позволяет повторно использовать код на странице, избегая "Copy Paste".
+								Методика позволяет повторно использовать код на странице, избегая "Copy Paste"
 							</p>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-sm-6 col-md-4">
 						<div class="about-this-tool">
 							<picture>
 								<source type="image/svg+xml" srcset="img/tools/sass.svg">
 								<img src="img/tools/sass.svg" alt="Screen">
 							</picture>
-							<h4 class="about-this-tool__title">Препроцессор SASS</h4>
+							<h4 class="about-this-tool__title">Препроцессор</h4>
 							<p class="about-this-tool__subtitle">
-								Переменные, вложенности, миксины, наследование и другие приятные вещи в CSS
+								SASS позволяет писать эстетичный и понятный CSS код, который легко читается
 							</p>
 						</div>
 					</div>
@@ -204,15 +207,6 @@
 		<!-- /.container -->
 	</section>
 	<!-- /.content -->
-
-	<section class="contact" id="contact">
-		<div class="container">
-			<h2 class="ever__title">Контакты</h2>
-	
-		</div>
-		<!-- /.container -->
-	</section>
-	<!-- /.contact -->
 
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

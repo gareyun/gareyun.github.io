@@ -5,23 +5,41 @@ $(document).ready(function() {
 		headerTop 					= document.querySelector('.header-top'),
 		nav 						= document.querySelector('.header-nav'),
 		logo 						= document.querySelector('.header-logo'),
+		headerTopMenuBtn 			= document.querySelector('.header-nav-menu'),
 		headerBtnDown 				= document.querySelector('.arrow-down'),
 		btnUp 						= document.querySelector('.btn-up'),
 
 		scrollSpeed 				= 800,
 		headerTopHeightDefault 		= 90,
-		headerTopHeightScroll 		= 60;
+		headerTopHeightScroll 		= 60,
+
+		isSmallScreen 				= false;
+
+
+	if ( window.innerWidth <= 768 ) {
+		isSmallScreen = true;
+	}
 
 
 	function setLineHeightDefault() {
-		if ( pageYOffset >= 100 ) {
-			headerTop.classList.add('header-top_active');
-			setLineHeight(nav, headerTopHeightScroll);
-			setLineHeight(logo, headerTopHeightScroll);
+
+		if ( !isSmallScreen ) {
+			headerTop.classList.remove('header-top_small');
+			if ( pageYOffset >= 100 ) {
+				headerTop.classList.add('header-top_active');
+				setLineHeight(nav, headerTopHeightScroll);
+				setLineHeight(logo, headerTopHeightScroll);
+			} else {
+				headerTop.classList.remove('header-top_active');
+				setLineHeight(nav, headerTopHeightDefault);
+				setLineHeight(logo, headerTopHeightDefault);
+			}
 		} else {
 			headerTop.classList.remove('header-top_active');
-			setLineHeight(nav, headerTopHeightDefault);
-			setLineHeight(logo, headerTopHeightDefault);
+			headerTop.classList.add('header-top_small');
+
+			setLineHeight(nav, headerTopHeightScroll);
+			setLineHeight(logo, headerTopHeightScroll);
 		}
 
 		// buttonUp
@@ -37,15 +55,40 @@ $(document).ready(function() {
 
 
 	window.addEventListener('scroll', function() {
-		setLineHeightDefault();
+		if ( !isSmallScreen ) {
+			setLineHeightDefault();
+		} else {
+			headerTop.classList.add('header-top_small');
+		}
 	});
 
 
+	window.onresize = function() {
+		// console.log(window.innerWidth);
+
+		if ( window.innerWidth <= 768 ) {
+			isSmallScreen = true;
+			setLineHeightDefault();
+		} else {
+			isSmallScreen = false;
+			setLineHeightDefault();
+		}
+	}
+
+
+	// Гамбургер
+	$(headerTopMenuBtn).on('click', function() {
+		$('.header-top_small .header-nav').toggleClass('header-nav_sm_active');
+	});
+
+
+	// Кнопка возврата наверх, в начало страницы
 	$(btnUp).on('click', function() {
 		$('html, body').animate({scrollTop: 0}, scrollSpeed);
 	});
 
 
+	// Переход по якорным ссылкам
 	$(nav).find('li a').on('click', function(event) {
 		event.preventDefault();
 		let 
@@ -53,35 +96,21 @@ $(document).ready(function() {
 			offsetTop = $(target).offset().top;
 
 		$('html, body').animate({scrollTop: offsetTop}, scrollSpeed);
+		$('.header-top_small .header-nav').toggleClass('header-nav_sm_active');
 
 	});
 
 
+	// Скролл главной страницы по стрелке вниз
 	$(headerBtnDown).on('click', function(event) {
 		event.preventDefault();
 		let offsetTop = $('header').innerHeight();
-		// let offsetTop = $('header').offset().top;
 
 		$('html, body').animate({scrollTop: offsetTop}, scrollSpeed);
 	});
 
-	// setInterval(function arrowDown() {
-	// 	let 
-	// 		opacityHeaderBtnDown = 1,
-	// 		bottomHeaderBtnDown = 5;
 
-	// 	if ( headerBtnDown.style.bottom == 0) {
-	// 		headerBtnDown.style.bottom = 5 + '%';
-	// 	} else {
-	// 		opacityHeaderBtnDown -= 0.1;
-	// 		bottomHeaderBtnDown -= 0.5;
-	// 		headerBtnDown.style.opacity = opacityHeaderBtnDown;
-	// 		headerBtnDown.style.bottom = bottomHeaderBtnDown + '%';
-	// 	}
-
-	// }, 10);
-
-
+	// Установка высота для headerTop
 	function setLineHeight(elem, value) {
 		elem.style.lineHeight = value + 'px';
 	}
