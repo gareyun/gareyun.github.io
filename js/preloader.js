@@ -22,13 +22,14 @@ function imageLoaded() {
 			if ( !preloader.classList.contains('preloader-done') ) {
 				preloader.classList.add('preloader-done');
 
-				// let typed = new Typed('#typed', {
-				// 	strings: ['', 'Искусная', 'Профессиональная'],
-				// 	startDelay: 2000,
-				// 	backDelay: 1000,
-				// 	backSpeed: 60,
-				// 	typeSpeed: 90
-				// });
+				let typed = new Typed('#typed', {
+					strings: ['WEB', 'JavaScript', 'HTML', 'CSS', 'Adaptive', 'Bootstrap', 'SASS'],
+					startDelay: 2000,
+					backDelay: 1500,
+					backSpeed: 80,
+					typeSpeed: 120,
+					loop: true
+				});
 			}
 
 		}, 1000);
