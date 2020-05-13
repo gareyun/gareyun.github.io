@@ -8,6 +8,7 @@ $(document).ready(function() {
 		headerTopMenuBtn 			= document.querySelector('.header-nav-menu'),
 		headerBtnDown 				= document.querySelector('.arrow-down'),
 		btnUp 						= document.querySelector('.btn-up'),
+		mainButtonToPortfolio 		= document.querySelector('.header__portfolio-button'),
 
 		scrollSpeed 				= 800,
 		headerTopHeightDefault 		= 90,
@@ -88,16 +89,17 @@ $(document).ready(function() {
 	});
 
 
-	// Переход по якорным ссылкам
+	// Якорные ссылки nav
 	$(nav).find('li a').on('click', function(event) {
 		event.preventDefault();
-		let 
-			target = $(this).attr('href'),
-			offsetTop = $(target).offset().top;
+		linkScrollTo(this);
+	});
 
-		$('html, body').animate({scrollTop: offsetTop}, scrollSpeed);
-		$('.header-top_small .header-nav').toggleClass('header-nav_sm_active');
 
+	// Якорная ссылка на главной секции
+	$(mainButtonToPortfolio).on('click', function(event) {
+		event.preventDefault();
+		linkScrollTo(this);
 	});
 
 
@@ -113,6 +115,21 @@ $(document).ready(function() {
 	// Установка высота для headerTop
 	function setLineHeight(elem, value) {
 		elem.style.lineHeight = value + 'px';
+	}
+
+
+	// Функция перехода по якорным ссылкам
+	function linkScrollTo(event) {
+		let 
+			target = $(event).attr('href'),
+			offsetTop = $(target).offset().top;
+
+		$('html, body').animate({scrollTop: offsetTop}, scrollSpeed);
+		
+		if ( event != mainButtonToPortfolio ) {
+			$('.header-top_small .header-nav').toggleClass('header-nav_sm_active');
+		}
+		
 	}
 
 });
