@@ -24,7 +24,7 @@ function imageLoaded() {
 
 				let typed = new Typed('#typed', {
 					strings: ['WEB', 'JavaScript', 'HTML', 'CSS', 'Adaptive', 'Bootstrap', 'SASS'],
-					startDelay: 2000,
+					// startDelay: 2000,
 					backDelay: 1500,
 					backSpeed: 80,
 					typeSpeed: 120,
