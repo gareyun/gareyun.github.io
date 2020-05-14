@@ -44,7 +44,7 @@ $(document).ready(function() {
 		}
 
 		// buttonUp
-		if ( pageYOffset >= 300 ) {
+		if ( pageYOffset >= 300 || window.innerWidth <= 992 ) {
 			$(btnUp).css("-webkit-transform", "translateX(0) rotate(-90deg)");
 			$(btnUp).css("transform", "translateX(0) rotate(-90deg)");
 		} else {
@@ -60,7 +60,7 @@ $(document).ready(function() {
 
 	// for mobile
 	$(document.body).on('touchmove', scrollPage);
-	
+
 
 	function scrollPage() {
 		if ( !isSmallScreen ) {
