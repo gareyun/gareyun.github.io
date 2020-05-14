@@ -55,13 +55,20 @@ $(document).ready(function() {
 	setLineHeightDefault();
 
 
-	window.addEventListener('scroll', function() {
+	// for pc
+	$(window).on('scroll', scrollPage)
+
+	// for mobile
+	$(document.body).on('touchmove', scrollPage);
+	
+
+	function scrollPage() {
 		if ( !isSmallScreen ) {
 			setLineHeightDefault();
 		} else {
 			headerTop.classList.add('header-top_small');
 		}
-	});
+	}
 
 
 	window.onresize = function() {
