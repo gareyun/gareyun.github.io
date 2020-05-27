@@ -1,20 +1,20 @@
-// document.addEventListener('DOMContentLoaded', function() {
 $(document).ready(function() {
 
 	let
-		headerTop 					= document.querySelector('.header-top'),
-		nav 						= document.querySelector('.header-nav'),
-		logo 						= document.querySelector('.header-logo'),
-		headerTopMenuBtn 			= document.querySelector('.header-nav-menu'),
-		headerBtnDown 				= document.querySelector('.arrow-down'),
-		btnUp 						= document.querySelector('.btn-up'),
-		mainButtonToPortfolio 		= document.querySelector('.header__portfolio-button'),
+		headerTop = document.querySelector('.header-top'),
+		nav = document.querySelector('.header-nav'),
+		logo = document.querySelector('.header-logo'),
+		headerTopMenuBtn = document.querySelector('.header-nav-menu'),
+		headerBtnDown = document.querySelector('.arrow-down'),
+		btnUp = document.querySelector('.btn-up'),
+		mainButtonToPortfolio = document.querySelector('.header__portfolio-button'),
 
-		scrollSpeed 				= 800,
-		headerTopHeightDefault 		= 90,
-		headerTopHeightScroll 		= 60,
+		scrollSpeed = 800,
+		headerTopHeightDefault = 90,
+		headerTopHeightScroll = 60,
 
-		isSmallScreen 				= false;
+		isSmallScreen = false,
+		isNavActive = false;
 
 
 	if ( window.innerWidth <= 768 ) {
@@ -87,6 +87,9 @@ $(document).ready(function() {
 	// Гамбургер
 	$(headerTopMenuBtn).on('click', function() {
 		$('.header-top_small .header-nav').toggleClass('header-nav_sm_active');
+		$(this).toggleClass('header-nav-menu_active');
+
+		isNavActive = true;
 	});
 
 
@@ -100,6 +103,7 @@ $(document).ready(function() {
 	$(nav).find('li a').on('click', function(event) {
 		event.preventDefault();
 		linkScrollTo(this);
+		$(headerTopMenuBtn).removeClass('header-nav-menu_active');
 	});
 
 
